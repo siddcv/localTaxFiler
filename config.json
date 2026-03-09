@@ -6,6 +6,7 @@
     "populator": "llama3.1:8b"
   },
   "ollama_base_url": "http://localhost:11434",
+  "tesseract_cmd": "",
   "paths": {
     "input": "{year}/input",
     "extracted": "{year}/extracted",
