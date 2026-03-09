@@ -1,0 +1,24 @@
+{
+  "tax_year": "2024",
+  "models": {
+    "formatter": "llama3.1:8b",
+    "mapping_builder": "deepseek-r1:7b",
+    "populator": "llama3.1:8b"
+  },
+  "ollama_base_url": "http://localhost:11434",
+  "paths": {
+    "input": "{year}/input",
+    "extracted": "{year}/extracted",
+    "formatted": "{year}/mapped/formatted",
+    "populated": "{year}/mapped/populated",
+    "output": "{year}/output",
+    "logs": "{year}/logs",
+    "ground_truth": "{year}/ground_truth",
+    "templates": "templates",
+    "schemas": "prompts/schemas"
+  },
+  "thresholds": {
+    "ocr_min_chars": 50,
+    "year_over_year_diff_pct": 20
+  }
+}
